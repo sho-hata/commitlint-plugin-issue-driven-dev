@@ -1,6 +1,6 @@
 import type { Rule } from "@commitlint/types";
 
-const subjectIssueNumberEmpty: Rule<unknown> = (parsed) => {
+const subjectIssueNumberEmpty: Rule = (parsed) => {
   const { raw } = parsed;
   const regex = /.*#[0-9]+.*/;
 
