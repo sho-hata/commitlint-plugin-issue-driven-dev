@@ -3,9 +3,14 @@ commitlint-plugin-issue-driven-dev checks if the commit message meets the commit
 ## Getting started.
 
 ### Install dependencies
-
+#### npm
 ```bash
-npm install --save-dev @commitlint/{cli,config-conventional} husky commitlint-plugin-issue-driven-dev
+npm install --save-dev @commitlint/{cli,config-conventional} husky@4 commitlint-plugin-issue-driven-dev
+```
+
+### yarn
+```bash
+yarn add --dev @commitlint/{cli,config-conventional} husky@4 commitlint-plugin-issue-driven-dev
 ```
 
 ### Configure commitlint to use issue driven development commits messages style config
