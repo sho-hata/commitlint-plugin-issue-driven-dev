@@ -3,4 +3,6 @@ module.exports = {
   coverageDirectory: "coverage",
   coveragePathIgnorePatterns: ["/node_modules/"],
   coverageProvider: "v8",
+  preset: "ts-jest",
+  testEnvironment: 'node',
 };

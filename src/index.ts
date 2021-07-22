@@ -7,4 +7,4 @@ const commitlintPluginIssueDrivenDev: Plugin = {
   },
 };
 
-export default commitlintPluginIssueDrivenDev;
+export = commitlintPluginIssueDrivenDev;
