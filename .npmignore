@@ -18,3 +18,4 @@ commitlint.config.js
 .prettierrc
 tsconfig.json
 tsconfig.eslint.json
+.husky
