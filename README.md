@@ -1,16 +1,21 @@
 # commitlint-plugin-issue-driven-dev
+
 commitlint-plugin-issue-driven-dev checks if the commit message meets the commit format for issue driven development.
-## Getting started.
+
+## Getting started
 
 ### Install dependencies
+
 #### npm
+
 ```bash
-npm install --save-dev @commitlint/{cli,config-conventional} husky@4 commitlint-plugin-issue-driven-dev
+npm install -D commitlint-plugin-issue-driven-dev @commitlint/{cli,config-conventional} husky
 ```
 
 ### yarn
+
 ```bash
-yarn add --dev @commitlint/{cli,config-conventional} husky@4 commitlint-plugin-issue-driven-dev
+yarn add -D commitlint-plugin-issue-driven-dev @commitlint/{cli,config-conventional} husky
 ```
 
 ### Configure commitlint to use issue driven development commits messages style config
@@ -28,15 +33,8 @@ module.exports = {
 
 ### To lint commits before they are created you can use Husky's 'commit-msg' hook
 
-```json
-// package.json
-{
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  }
-}
+```bash
+npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 ```
 
 ## Rules
