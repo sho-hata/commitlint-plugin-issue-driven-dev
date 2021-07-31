@@ -34,7 +34,7 @@ module.exports = {
 ### To lint commits before they are created you can use Husky's 'commit-msg' hook
 
 ```bash
-npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
+npx husky install && npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'
 ```
 
 ## Rules
