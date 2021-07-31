@@ -1,6 +1,6 @@
 {
   "name": "commitlint-plugin-issue-driven-dev",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "commitlint-plugin-issue-driven-dev checks if the commit message meets the commit format for issue driven development.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
